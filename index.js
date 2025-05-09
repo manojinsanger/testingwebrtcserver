@@ -14,7 +14,8 @@ const io = socketIO(server, {
 });
 
 // MongoDB setup
-const mongoUrl = "mongodb+srv://manoj:adM6pnssjmK9W2Sh@cluster0.hlcwrbn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const mongoUrl = "mongodb+srv://manoj:adM6pnssjmK9W2Sh@cluster0.hlcwrbn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&tls=true";
+
 if (!mongoUrl) {
   throw new Error('MONGO_URL environment variable is not set');
 }
