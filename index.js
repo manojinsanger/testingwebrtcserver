@@ -468,7 +468,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, {
   cors: {
-    origin: ['https://your-frontend.com'], // Replace with your frontend URL
+    origin: ['*'], // Replace with your frontend URL
     methods: ['GET', 'POST'],
   },
 });
